@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWPFApp", "HelloWPFApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureViewerWPF", "PictureViewerWPF\PictureViewerWPF.csproj", "{212F2C7C-2B9D-4988-BCC1-DB76EDAFC525}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathQuizWPF", "MathQuizWPF\MathQuizWPF.csproj", "{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{212F2C7C-2B9D-4988-BCC1-DB76EDAFC525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{212F2C7C-2B9D-4988-BCC1-DB76EDAFC525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{212F2C7C-2B9D-4988-BCC1-DB76EDAFC525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
