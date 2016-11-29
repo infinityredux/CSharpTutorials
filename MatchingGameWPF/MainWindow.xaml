@@ -1,0 +1,70 @@
+﻿<Window x:Class="MatchingGameWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchingGameWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="550">
+    <Grid x:Name="matchGrid" Background="CornflowerBlue">
+        <Grid.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="BorderBrush" Value="White" />
+                <Setter Property="BorderThickness" Value="2" />
+                <Setter Property="CornerRadius" Value="5" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Border Grid.Row="0" Grid.Column="0" />
+        <Border Grid.Row="0" Grid.Column="1" />
+        <Border Grid.Row="0" Grid.Column="2" />
+        <Border Grid.Row="0" Grid.Column="3" />
+
+        <Border Grid.Row="1" Grid.Column="0" />
+        <Border Grid.Row="1" Grid.Column="1" />
+        <Border Grid.Row="1" Grid.Column="2" />
+        <Border Grid.Row="1" Grid.Column="3" />
+
+        <Border Grid.Row="2" Grid.Column="0" />
+        <Border Grid.Row="2" Grid.Column="1" />
+        <Border Grid.Row="2" Grid.Column="2" />
+        <Border Grid.Row="2" Grid.Column="3" />
+
+        <Border Grid.Row="3" Grid.Column="0" />
+        <Border Grid.Row="3" Grid.Column="1" />
+        <Border Grid.Row="3" Grid.Column="2" />
+        <Border Grid.Row="3" Grid.Column="3" />
+        
+        <Label Grid.Row="0" Grid.Column="0" x:Name="labelA0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="0" Grid.Column="1" x:Name="labelA1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="0" Grid.Column="2" x:Name="labelA2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="0" Grid.Column="3" x:Name="labelA3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+
+        <Label Grid.Row="1" Grid.Column="0" x:Name="labelB0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="1" Grid.Column="1" x:Name="labelB1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="1" Grid.Column="2" x:Name="labelB2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="1" Grid.Column="3" x:Name="labelB3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+
+        <Label Grid.Row="2" Grid.Column="0" x:Name="labelC0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="2" Grid.Column="1" x:Name="labelC1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="2" Grid.Column="2" x:Name="labelC2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="2" Grid.Column="3" x:Name="labelC3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+
+        <Label Grid.Row="3" Grid.Column="0" x:Name="labelD0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="3" Grid.Column="1" x:Name="labelD1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="3" Grid.Column="2" x:Name="labelD2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="3" Grid.Column="3" x:Name="labelD3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+    </Grid>
+</Window>

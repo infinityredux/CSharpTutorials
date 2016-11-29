@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureViewerWPF", "Picture
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathQuizWPF", "MathQuizWPF\MathQuizWPF.csproj", "{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchingGameWPF", "MatchingGameWPF\MatchingGameWPF.csproj", "{369CC843-DD80-43F4-9736-FF52CCD42461}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369CC843-DD80-43F4-9736-FF52CCD42461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369CC843-DD80-43F4-9736-FF52CCD42461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369CC843-DD80-43F4-9736-FF52CCD42461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369CC843-DD80-43F4-9736-FF52CCD42461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
