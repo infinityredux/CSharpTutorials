@@ -47,24 +47,24 @@
         <Border Grid.Row="3" Grid.Column="2" />
         <Border Grid.Row="3" Grid.Column="3" />
         
-        <Label Grid.Row="0" Grid.Column="0" x:Name="labelA0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="0" Grid.Column="1" x:Name="labelA1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="0" Grid.Column="2" x:Name="labelA2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="0" Grid.Column="3" x:Name="labelA3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="0" Grid.Column="0" x:Name="labelA0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="0" Grid.Column="1" x:Name="labelA1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="0" Grid.Column="2" x:Name="labelA2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="0" Grid.Column="3" x:Name="labelA3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
 
-        <Label Grid.Row="1" Grid.Column="0" x:Name="labelB0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="1" Grid.Column="1" x:Name="labelB1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="1" Grid.Column="2" x:Name="labelB2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="1" Grid.Column="3" x:Name="labelB3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="1" Grid.Column="0" x:Name="labelB0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="1" Grid.Column="1" x:Name="labelB1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="1" Grid.Column="2" x:Name="labelB2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="1" Grid.Column="3" x:Name="labelB3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
 
-        <Label Grid.Row="2" Grid.Column="0" x:Name="labelC0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="2" Grid.Column="1" x:Name="labelC1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="2" Grid.Column="2" x:Name="labelC2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="2" Grid.Column="3" x:Name="labelC3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="2" Grid.Column="0" x:Name="labelC0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="2" Grid.Column="1" x:Name="labelC1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="2" Grid.Column="2" x:Name="labelC2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="2" Grid.Column="3" x:Name="labelC3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
 
-        <Label Grid.Row="3" Grid.Column="0" x:Name="labelD0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="3" Grid.Column="1" x:Name="labelD1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="3" Grid.Column="2" x:Name="labelD2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
-        <Label Grid.Row="3" Grid.Column="3" x:Name="labelD3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="128" Padding="0"/>
+        <Label Grid.Row="3" Grid.Column="0" x:Name="labelD0" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="3" Grid.Column="1" x:Name="labelD1" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="3" Grid.Column="2" x:Name="labelD2" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
+        <Label Grid.Row="3" Grid.Column="3" x:Name="labelD3" Content="o" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Wingdings" FontSize="72" Padding="0" MouseDown="label_MouseDown"/>
     </Grid>
 </Window>
