@@ -22,8 +22,11 @@ namespace MatchingGameWPF
     public partial class MainWindow : Window
     {
         protected Random rand;
-        protected DispatcherTimer timer;
+        protected DispatcherTimer matchFailTimer;
+        protected DispatcherTimer choiceDelayTimer;
+        protected DispatcherTimer countTimer;
 
+        protected int count;
         protected List<string> symbols;
 
         protected Brush showSymbol;
@@ -35,19 +38,19 @@ namespace MatchingGameWPF
             InitializeComponent();
 
             rand = new Random();
-            timer = new DispatcherTimer();
-            timer.Tick += new EventHandler(timer_Tick);
-            timer.Interval = new TimeSpan(0, 0, 0, 0, 750);
+            matchFailTimer = new DispatcherTimer();
+            matchFailTimer.Tick += new EventHandler(matchFailTimer_Tick);
+            matchFailTimer.Interval = new TimeSpan(0, 0, 0, 0, 750);
 
-            symbols = new List<string>()
-            {
-                "!", "!", "N", "N", ",", ",", "k", "k",
-                "b", "b", "v", "v", "w", "w", "z", "z"
-            };
+            choiceDelayTimer = new DispatcherTimer();
+            choiceDelayTimer.Tick += new EventHandler(choiceDelayTimer_Tick);
+            choiceDelayTimer.Interval = new TimeSpan(0, 0, 0, 2, 0);
+
+            countTimer = new DispatcherTimer();
+            countTimer.Tick += new EventHandler(countTimer_Tick);
+            countTimer.Interval = new TimeSpan(0, 0, 1);
 
             showSymbol = new SolidColorBrush(Colors.Black);
-            firstClicked = null;
-            secondClicked = null;
 
             AssignIconsToSquares();
         }
@@ -57,6 +60,15 @@ namespace MatchingGameWPF
         /// </summary>
         private void AssignIconsToSquares()
         {
+            count = 0;
+            symbols = new List<string>()
+            {
+                "!", "!", "N", "N", ",", ",", "k", "k",
+                "b", "b", "v", "v", "w", "w", "z", "z"
+            };
+            firstClicked = null;
+            secondClicked = null;
+
             // The TableLayoutPanel has 16 labels,
             // and the icon list has 16 icons,
             // so an icon is pulled at random from the list
@@ -72,6 +84,8 @@ namespace MatchingGameWPF
                     symbols.RemoveAt(randomNumber);
                 }
             }
+
+            countTimer.Start();
         }
 
         /// <summary>
@@ -84,7 +98,7 @@ namespace MatchingGameWPF
             // The timer is only on after two non-matching 
             // icons have been shown to the player, 
             // so ignore any clicks if the timer is running
-            if (timer.IsEnabled == true)
+            if (matchFailTimer.IsEnabled == true)
                 return;
 
             Label clickedLabel = sender as Label;
@@ -105,6 +119,7 @@ namespace MatchingGameWPF
                 {
                     firstClicked = clickedLabel;
                     firstClicked.Foreground = showSymbol;
+                    choiceDelayTimer.Start();
 
                     return;
                 }
@@ -115,10 +130,11 @@ namespace MatchingGameWPF
                 // Set its color to black
                 secondClicked = clickedLabel;
                 secondClicked.Foreground = showSymbol;
+                choiceDelayTimer.Stop();
 
                 // Check to see if the player won
                 CheckForWinner();
-                
+
                 // If the player clicked two matching icons, keep them 
                 // black and reset firstClicked and secondClicked 
                 // so the player can click another icon
@@ -128,37 +144,13 @@ namespace MatchingGameWPF
                     secondClicked = null;
                     return;
                 }
-                
+
                 // If the player gets this far, the player 
                 // clicked two different icons, so start the 
                 // timer (which will wait three quarters of 
                 // a second, and then hide the icons)
-                timer.Start();                
+                matchFailTimer.Start();
             }
-        }
-
-        /// <summary>
-        /// This timer is started when the player clicks 
-        /// two icons that don't match,
-        /// so it counts three quarters of a second 
-        /// and then turns itself off and hides both icons
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            // Stop the timer
-            timer.Stop();
-
-            // Hide both icons
-            firstClicked.Foreground = firstClicked.Background;
-            secondClicked.Foreground = secondClicked.Background;
-
-            // Reset firstClicked and secondClicked 
-            // so the next time a label is
-            // clicked, the program knows it's the first click
-            firstClicked = null;
-            secondClicked = null;
         }
 
         /// <summary>
@@ -183,8 +175,44 @@ namespace MatchingGameWPF
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
-            MessageBox.Show("You matched all the icons!", "Congratulations");
+            MessageBox.Show("You matched all the icons in " + count + " seconds!", "Congratulations");
             Close();
+        }
+
+        /// <summary>
+        /// This timer is started when the player clicks 
+        /// two icons that don't match,
+        /// so it counts three quarters of a second 
+        /// and then turns itself off and hides both icons
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void matchFailTimer_Tick(object sender, EventArgs e)
+        {
+            // Stop the timer
+            matchFailTimer.Stop();
+
+            // Hide both icons
+            firstClicked.Foreground = firstClicked.Background;
+            secondClicked.Foreground = secondClicked.Background;
+
+            // Reset firstClicked and secondClicked 
+            // so the next time a label is
+            // clicked, the program knows it's the first click
+            firstClicked = null;
+            secondClicked = null;
+        }
+
+        private void choiceDelayTimer_Tick(object sender, EventArgs e)
+        {
+            choiceDelayTimer.Start();
+            firstClicked.Foreground = firstClicked.Background;
+            firstClicked = null;
+        }
+
+        private void countTimer_Tick(object sender, EventArgs e)
+        {
+            count += 1;
         }
     }
 }
