@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWPFApp", "HelloWPFApp\HelloWPFApp.csproj", "{4E5B804A-76FF-4BDD-9359-772051DC6AAA}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathQuizWPF", "MathQuizWPF\MathQuizWPF.csproj", "{BE0B0542-AD24-4C11-B2FF-306AEF1B8EA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchingGameWPF", "MatchingGameWPF\MatchingGameWPF.csproj", "{369CC843-DD80-43F4-9736-FF52CCD42461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreExperiment", "NetCoreExperiment\NetCoreExperiment.csproj", "{9BA45798-89CD-4294-86EE-518DF132FDED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{369CC843-DD80-43F4-9736-FF52CCD42461}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{369CC843-DD80-43F4-9736-FF52CCD42461}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{369CC843-DD80-43F4-9736-FF52CCD42461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA45798-89CD-4294-86EE-518DF132FDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA45798-89CD-4294-86EE-518DF132FDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA45798-89CD-4294-86EE-518DF132FDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA45798-89CD-4294-86EE-518DF132FDED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
