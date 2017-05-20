@@ -48,7 +48,8 @@ namespace NetCoreExperiment
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddMvc(options => {
+            services.AddMvc(options => 
+            {
                 options.SslPort = 44321;
                 options.Filters.Add(new RequireHttpsAttribute());
             });
@@ -80,6 +81,12 @@ namespace NetCoreExperiment
             app.UseIdentity();
 
             // Add external authentication middleware below. To configure them please see https://go.microsoft.com/fwlink/?LinkID=532715
+
+            app.UseGoogleAuthentication(new GoogleOptions()
+            {
+                ClientId = Configuration["Authentication:Google:ClientId"],
+                ClientSecret = Configuration["Authentication:Google:ClientSecret"]
+            });
 
             app.UseMvc(routes =>
             {
